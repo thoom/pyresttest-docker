@@ -9,4 +9,4 @@ various Linux / macOS platforms, I created this Docker container to make it pain
 To use with a smoke test for Github (using one of the examples on the official project):
 
     docker pull thoom/pyresttest-docker
-    docker run --rm -v $PWD:/tests thoom/pyresttest-docker https://api.github.com github_api_smoketest.yaml
+    docker run --rm -v $PWD:/tests thoom/pyresttest-docker https://api.github.com examples/github_api_smoketest.yaml
