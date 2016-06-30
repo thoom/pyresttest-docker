@@ -1,8 +1,8 @@
 # pyresttest-docker
 Docker container for [PyRestTest](https://github.com/svanoort/pyresttest).
 
-Since PyRestTest has some unique dependencies that can be a pain to install on
-various Linux / macOS platforms, I created this Docker container to make it painless!
+Using Docker since PyRestTest has some unique dependencies that can be a pain to install on
+various Linux / macOS platforms and doesn't have native Windows support.
 
 ## Usage
 
