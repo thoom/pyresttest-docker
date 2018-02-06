@@ -1,5 +1,5 @@
 FROM python:2-alpine
-MAINTAINER Z.d. Peacock <zdp@thoomtech.com>
+LABEL Author="Z.d. Peacock <zdp@thoomtech.com>"
 
 # This needs to be set otherwise pycurl won't link correctly
 ENV PYCURL_SSL_LIBRARY=openssl

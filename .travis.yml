@@ -1,0 +1,20 @@
+sudo: required
+
+language: python
+python:
+  - 2.7
+
+services:
+  - docker
+
+install:
+  - docker build -t pyresttest-docker . --no-cache
+
+script:
+  - docker run --rm -v $PWD/tests:/tests pyresttest-docker https://api.github.com github_api_smoketest.yml | grep "Test Group Default SUCCEEDED"
+
+deploy:
+  - provider: script
+    script: scripts/deploy.sh
+    on:
+      branch: master
