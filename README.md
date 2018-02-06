@@ -9,4 +9,4 @@ various Linux / macOS platforms and doesn't have native Windows support.
 To use with a smoke test for Github (using one of the examples on the official project):
 
     docker pull thoom/pyresttest
-    docker run --rm -v $PWD/tests:/tests pyresttest-docker https://api.github.com github_api_smoketest.yml
+    docker run --rm -v $PWD/tests:/tests thoom/pyresttest https://api.github.com github_api_smoketest.yml
